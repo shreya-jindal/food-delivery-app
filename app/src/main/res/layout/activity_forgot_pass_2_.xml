@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.forgot_pass_2_Activity"
+    android:background="@color/orange">
+
+    <TextView
+        android:id="@+id/txtenterOTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/enter_the_received_otp_below"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/etOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtenterOTP"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        android:drawablePadding="5dp"
+        android:hint="OTP (4 characters)"
+        android:inputType="number"
+        android:maxLength="4"
+        android:padding="10dp"
+        android:textSize="16.7sp" />
+
+    <EditText
+        android:id="@+id/etnewPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etOtp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        android:drawablePadding="5dp"
+        android:hint="New Password (Min. 4 characters)"
+        android:padding="10dp"
+        android:textSize="16.7sp" />
+
+    <EditText
+        android:id="@+id/etconfirmNewPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etnewPassword"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        android:drawablePadding="5dp"
+        android:hint="Confirm Password"
+        android:padding="10dp"
+        android:textSize="16.7sp" />
+
+    <Button
+        android:id="@+id/btsubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etconfirmNewPassword"
+        android:text="@string/submit"
+        android:background="@color/red"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        />
+
+</RelativeLayout>

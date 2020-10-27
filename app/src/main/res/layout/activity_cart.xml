@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RestDetailActivity"
+
+    android:weightSum="10"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/txtorderfrom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="order from: Chilies"
+        android:textSize="19sp"
+        android:textColor="@color/blackish"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="0.7"/>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerCart"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/txtorderfrom"
+        android:layout_marginTop="20dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_weight="8.6"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.70">
+        <Button
+            android:id="@+id/btnOrder"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/orange"
+            android:text="Order"
+            android:textColor="@color/whitish"
+            android:textSize="18sp"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

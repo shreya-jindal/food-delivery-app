@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:weightSum="6"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/txtDetailIndex"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.70"
+        android:gravity="center"
+        android:text="2"
+        android:textSize="20sp"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txtDetailItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mexico"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/blackish"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/txtDetailPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs.100"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnDetailAdd"
+        android:layout_width="0dp"
+        android:layout_height="33dp"
+        android:layout_weight="1.30"
+        android:layout_marginRight="17dp"
+        android:layout_marginLeft="7dp"
+        android:layout_gravity="center"
+        android:text="Remove"
+        android:textStyle="bold"
+        android:textColor="@color/whitish"
+        android:background="@color/yellow"/>
+
+</LinearLayout>
